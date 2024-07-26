@@ -1,0 +1,82 @@
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea Gifs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/iziToast.min.css">
+</head>
+
+<body>
+    
+    <div class="header">
+            <h5 class="textHeader">EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * </h5>
+    </div>
+    
+    <div class="contenedor-principal">  
+        <nav class="navbar">
+        
+            <div class="navbar_left">
+                <a href="#"><i class="bi bi-house navbar_icon" id="home_btn"></i></a> 
+            </div>
+
+            
+            <ul class="navbar_menu">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"><i ></i></a></li>
+            </ul>
+
+        
+        </nav>
+
+        <div class="main-imageLoader">
+            <font class="main-title">Crea Gifs</font>
+            <div class="main-description">
+                <p>
+                    Haz click en seleccionar archivos para empezar
+                    <p/>
+            </div>
+            <form id="formulario" action="/upload" method="POST" enctype="multipart/form-data">
+                <div class="contenedor-subir-archivos">
+                    <label id="fileLabel" for="selector_archivo">Seleccionar archivos</label>
+                    <input type="file" id="selector_archivo" label="Seleccionar archivos" name="photos" accept="image/*, video/*" required>
+                </div>
+            </form>
+        </div>
+
+        <div class="misproyectos">
+            <div class="title_listproyecto">PROYECTOS</div><br><br>
+            <div class="diamond-line"></div><br>
+            <div class="proyectos" id="proyectos_index">
+                <img id='gifGen' class="GIFGenerated" src="./assets/images/preview.gif">
+                <img id='gifGen' class="GIFGenerated" src="./assets/images/preview.gif">
+                <img id='gifGen' class="GIFGenerated" src="./assets/images/preview.gif">
+                <img id='gifGen' class="GIFGenerated" src="./assets/images/preview.gif">
+                <img id='gifGen' class="GIFGenerated" src="./assets/images/preview.gif">
+                <img id='gifGen' class="GIFGenerated" src="./assets/images/preview.gif">
+                <img id='gifGen' class="GIFGenerated" src="./assets/images/preview.gif">
+                <img id='gifGen' class="GIFGenerated" src="./assets/images/preview.gif">
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gifshot/0.3.2/gifshot.min.js"></script>
+    <script src="assets/js/index.js">
+        
+        
+    </script>
+     <script src="/assets/js/gifshot.js"></script>
+     <script src="assets/js/iziToast.min.js"></script>
+</body>
+
+</html>

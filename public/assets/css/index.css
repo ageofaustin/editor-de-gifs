@@ -1,0 +1,628 @@
+
+.header {
+    background-color: #F6D53C;
+    text-align: left;
+    overflow: hidden; /* Asegura que el texto que se salga del contenedor no sea visible */
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+    padding: 10px 0; /* Ajusta el padding superior e inferior según sea necesario */
+    margin: 0; /* Elimina cualquier margen adicional */
+    width: -webkit-fill-available;
+    z-index: 100;
+  }
+  
+  .textHeader {
+    color: #005E4C;
+    display: inline-block; /* Permite que el texto se comporte como un bloque en línea */
+    animation: moveText 30s linear infinite; /* Aplica la animación de desplazamiento */
+    margin: 0; /* Elimina cualquier margen adicional */
+    font-family: "Bebas Neue", sans-serif;
+  
+  }
+  
+  @keyframes moveText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+.barrita {
+    font-size: large;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #5fa673;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.barrita b {
+    padding-left: 20px;
+}
+
+.barrita button {
+    color: #ffff;
+    background-color: #005E4C;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.proyectos-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#fileLabel {
+    margin-top: 20px;
+    background-color: #448AFF;
+    border: none;
+    /* Sin borde */
+    padding: 10px 20px;
+    /* Relleno */
+    text-align: center;
+    /* Alineación del texto */
+    text-decoration: none;
+    /* Sin decoración de texto */
+    color: white;
+    display: flex;
+    /* Mostrar como bloque en línea */
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    /* Tamaño de fuente */
+    margin: 10px;
+    /* Margen */
+    cursor: pointer;
+    /* Cursor al pasar por encima */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    transition: background-color 0.3s;
+    /* Transición de color de fondo */
+    height: 50px;
+    width: 300px;
+}
+
+
+.title_listproyecto {
+    font-size: 25px;
+}
+
+.proyectos {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow-x: scroll;
+    justify-content: start;
+    gap: 20px;
+}
+
+
+
+.main-imageLoader {
+    background-image: linear-gradient(to left, #005E4C, #005E4C);
+    color: white;
+    border: none;
+    padding: 80px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 85% 15% 86% 14% / 31% 51% 49% 69%;
+    transition: background-color 0.3s;
+    width: -webkit-fill-available;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+
+
+p{
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.main-title {
+    font-size: 300%;
+}
+
+.main-description {
+    font-size: 130%;
+}
+.GIFGenerated {
+    background-color: #F6F3EC;
+    min-width: 150px;
+    min-height: 150px;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.creargift input {
+    margin-top: 20px;
+    background-color: #F6F3EC;
+    border: none;
+    /* Sin borde */
+    padding: 60px;
+    /* Relleno */
+    text-align: center;
+    /* Alineación del texto */
+    text-decoration: none;
+    /* Sin decoración de texto */
+    display: inline-block;
+    /* Mostrar como bloque en línea */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    margin: 10px;
+    /* Margen */
+    cursor: pointer;
+    /* Cursor al pasar por encima */
+    border-radius: 0px;
+    /* Bordes redondeados */
+    transition: background-color 0.3s;
+    /* Transición de color de fondo */
+    align-items: center;
+}
+
+
+/*-----vieja barra -----.main-header {
+    background-color: rgba(223, 223, 223, 0.418);
+    border-radius: 5px;
+    width: -webkit-fill-available;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 40px;
+    margin-top: -3px;
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    height: 50px;
+    font-size: small;
+    font-style: normal;
+} ---fin vieja barra-----*/
+
+
+/*--------Nueva barra---------------*/
+a {
+    text-decoration: none;
+}
+.navbar {
+
+    display: flex;
+    border-radius: 0px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F3EC;
+    padding: 10px 20px;
+    
+    
+   
+    width: -webkit-fill-available;
+    /* border-style: solid; */
+}
+
+.navbar_icon {
+    font-size: 250%;
+    color: #000000;
+}
+
+.navbar_icon_profile {
+    font-size: 170%;
+}
+
+.navbar_left {
+    height: 40px;
+}
+
+.navbar_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    /* border-style: solid; */
+    margin: 10px;
+    justify-content: space-between;
+
+    
+}
+
+
+
+.navbar_menu li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    
+    color: black;
+    cursor: pointer;
+
+}
+
+
+    
+
+.navbar_menu li a:hover {
+    background-color: #F6F3EC;
+    
+}
+
+
+/*----------fin nueva barra------------*/
+
+header .tab {
+    border-right: 2px solid rgb(199, 199, 199);
+}
+
+.presable {
+    cursor: pointer;
+}
+
+.main_home_page {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(40, 44, 52);
+    width: 60%;
+    height: 100vh;
+    /* border-style: solid; */
+}
+
+body {
+    background-color: #F6F3EC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0px;
+    height: 100vh;
+    font-family: "Poetsen One", sans-serif;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-color: yellow;
+
+    /* border-style: solid; */
+
+}
+
+#selector_archivo {
+    display: none;
+}
+
+.main-filtro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(40, 44, 52);
+}
+
+.crearvid {
+    color: rgb(247, 243, 243);
+    border: none;
+    padding: 20px;
+    padding-top: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 0px;
+    width: 90%;
+}
+
+.crearvid.BarraSuperior {
+    /* background-color: #005E4C; */
+    border-radius: 10px;
+    display: flex;
+    gap: 6px;
+    height: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: small;
+    font-style: normal;
+    padding: 20px;
+    z-index: 1;
+    /* Añadido */
+}
+
+.crearvid .pestanas {
+    color: #ffff;
+    background-color: rgb(84, 141, 81);
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 10px;
+    height: 50px;
+    border: double;
+}
+
+#id {
+    display: none;
+}
+
+dl {
+    text-align: center;
+    size: 30px;
+    font-size: 30px;
+}
+
+
+.centro {
+    z-index: 2;
+    background-image: linear-gradient(to left, #7ddc80, #1bb5b5);
+    color: white;
+    border: none;
+    padding: 5px;
+    padding-top: 10px;
+    text-align: left;
+    text-decoration: none;
+    justify-content: flex-start;
+    align-items: left;
+    font-size: 16px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.centro .crear {
+    text-align: left;
+    margin-right: 100px;
+    margin-left: 200px;
+}
+
+.centro button {
+    color: #0d0202;
+    background-color: rgb(245, 248, 245);
+    border: none;
+    margin-left: 1000px;
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.centro .cambiar {
+    background-color: rgb(243, 247, 246);
+    text-align: right;
+}
+
+.contenido {
+    display: flex;
+    /* Agregado */
+    flex-direction: row;
+    /* Cambiado a fila */
+    justify-content: space-around;
+    /* Distribuye los elementos equitativamente */
+    align-items: center;
+    color: white;
+    border: none;
+    padding: 20px;
+    padding-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.contenido .video {
+    flex: 1;
+    /* Hace que ocupen el mismo espacio */
+    margin: 10px;
+    /* Ajusta el margen entre los elementos */
+    padding: 20px;
+    /* Agregado para mejorar la apariencia */
+    text-align: right;
+    /* Centra el contenido horizontalmente */
+}
+
+.contenido .info {
+    flex: 1;
+    /* Hace que ocupen el mismo espacio */
+    margin: 10px;
+    /* Ajusta el margen entre los elementos */
+    padding: 20px;
+    /* Agregado para mejorar la apariencia */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+}
+
+.crearvid .info {
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+}
+
+.crearvid b {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.crearvid p {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.crearvid a {
+    text-align: left;
+    display: block;
+    margin-top: 20px;
+}
+
+.crearvid input {
+    margin-top: 20px;
+    background-color: rgb(208, 192, 192);
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 70%;
+}
+
+.crearvid input[type="range"] {
+    width: 50%;
+}
+
+.crearvid p:last-child {
+    margin-top: 20px;
+}
+
+
+
+.barrita b {
+    padding-left: 20px;
+}
+
+.barrita button {
+    color: #ffff;
+    background-color: rgb(84, 141, 81);
+    border: none;
+    margin-left: 50px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.barrita .desc {
+    background-color: rgb(181, 71, 71);
+}
+
+#fileLabel {
+    margin-top: 20px;
+    background-color: rgb(43, 177, 182);
+    border: none;
+    padding: 5px 0.1px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    height: 50px;
+    width: 300px;
+}
+
+.misproyectos {
+    margin-top: 50px;
+    border-radius: 50px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: start;
+    justify-content: start;
+    
+}
+
+
+/************LINEA HORIZONTAL***********/
+
+.diamond-line {
+    position: relative;
+    height: 3px;
+    background-color: #005E4C;
+    width: -webkit-fill-available;
+}
+
+.diamond-line::before,
+.diamond-line::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #005E4C;
+    clip-path: polygon(50% 0%, 0% 50%, 50% 100%, 100% 50%);
+    border: 1px solid #005E4C;
+}
+
+.diamond-line::before {
+    left: -5px;
+    top: -5px;
+}
+
+.diamond-line::after {
+    right: -5px;
+    top: -5px;
+}
+
+
+/************ FIN LINEA HORIZONTAL***********/
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+}
+
+button:hover {
+    color: blue;
+    /* Cambiar color al pasar el ratón */
+}
+
+.contenedor-principal {
+    width: 70%;
+    height:-webkit-fill-available;;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    /* border-style: solid; */
+
+}

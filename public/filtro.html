@@ -1,0 +1,166 @@
+<!-- editor.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+    <link rel="stylesheet" href="/assets/css/filtro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="header">
+    <h5 class="textHeader">EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * EDITA TU GIF * </h5>
+  </div>
+ 
+  <div class="topnav">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+      </svg>
+
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle presable"  viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+    </svg> </a> 
+    <a href="#">TABLERO</a>
+    <a href="#">PROYECTO</a>
+    <a href="#">CREAR</a>  
+  </div>
+
+  <div>
+
+  </div>
+
+
+<div id="filtro-videos" style="display:block;">
+  <div class="container">
+      <div class="box1">
+          <div class="subbox1">
+              <center>
+                  <div id="preview-gif" class="preview-gif" style="margin-top:50px;"> 
+                  </div>
+                  
+                  <div class="contenedor1">
+                    <div class="cont1"> Preview</div>
+                   <div class="icons-container"> 
+                    <dt>
+                      <dl><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z"/>
+                        <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466"/>
+                      </svg></dl>
+                      <dl><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+                        <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+                      </svg></dl>
+                      <dl> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-symmetry-vertical" viewBox="0 0 16 16">
+                        <path d="M7 2.5a.5.5 0 0 0-.939-.24l-6 11A.5.5 0 0 0 .5 14h6a.5.5 0 0 0 .5-.5zm2.376-.484a.5.5 0 0 1 .563.245l6 11A.5.5 0 0 1 15.5 14h-6a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .376-.484M10 4.46V13h4.658z"/>
+                      </svg> </dl>
+                      <dl> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-symmetry-horizontal" viewBox="0 0 16 16">
+                        <path d="M13.5 7a.5.5 0 0 0 .24-.939l-11-6A.5.5 0 0 0 2 .5v6a.5.5 0 0 0 .5.5zm.485 2.376a.5.5 0 0 1-.246.563l-11 6A.5.5 0 0 1 2 15.5v-6a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .485.376M11.539 10H3v4.658z"/>
+                      </svg></dl>
+                    </dt>
+                  </div> 
+                  <div class="icons2-container"> 
+                    <dt> 
+                      <dl> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                      </svg></dl>
+                      <dl> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moisture" viewBox="0 0 16 16">
+                        <path d="M13.5 0a.5.5 0 0 0 0 1H15v2.75h-.5a.5.5 0 0 0 0 1h.5V7.5h-1.5a.5.5 0 0 0 0 1H15v2.75h-.5a.5.5 0 0 0 0 1h.5V15h-1.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 .5-.5V.5a.5.5 0 0 0-.5-.5zM7 1.5l.364-.343a.5.5 0 0 0-.728 0l-.002.002-.006.007-.022.023-.08.088a29 29 0 0 0-1.274 1.517c-.769.983-1.714 2.325-2.385 3.727C2.368 7.564 2 8.682 2 9.733 2 12.614 4.212 15 7 15s5-2.386 5-5.267c0-1.05-.368-2.169-.867-3.212-.671-1.402-1.616-2.744-2.385-3.727a29 29 0 0 0-1.354-1.605l-.022-.023-.006-.007-.002-.001zm0 0-.364-.343zm-.016.766L7 2.247l.016.019c.24.274.572.667.944 1.144.611.781 1.32 1.776 1.901 2.827H4.14c.58-1.051 1.29-2.046 1.9-2.827.373-.477.706-.87.945-1.144zM3 9.733c0-.755.244-1.612.638-2.496h6.724c.395.884.638 1.741.638 2.496C11 12.117 9.182 14 7 14s-4-1.883-4-4.267"/>
+                      </svg></dl>
+                      <dl> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tropical-storm" viewBox="0 0 16 16">
+                        <path d="M8 9.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                        <path d="M9.5 2c-.9 0-1.75.216-2.501.6A5 5 0 0 1 13 7.5a6.5 6.5 0 1 1-13 0 .5.5 0 0 1 1 0 5.5 5.5 0 0 0 8.001 4.9A5 5 0 0 1 3 7.5a6.5 6.5 0 0 1 13 0 .5.5 0 0 1-1 0A5.5 5.5 0 0 0 9.5 2M8 3.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8"/>
+                      </svg></dl>
+                      <dl> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-highlights" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-8 5v1H4.5a.5.5 0 0 0-.093.009A7 7 0 0 1 3.1 13zm0-1H2.255a7 7 0 0 1-.581-1H8zm-6.71-2a7 7 0 0 1-.22-1H8v1zM1 8q0-.51.07-1H8v1zm.29-2q.155-.519.384-1H8v1zm.965-2q.377-.54.846-1H8v1zm2.137-2A6.97 6.97 0 0 1 8 1v1z"/>
+                      </svg></dl>
+                      <dl> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap-reboot" viewBox="0 0 16 16">
+                        <path d="M1.161 8a6.84 6.84 0 1 0 6.842-6.84.58.58 0 1 1 0-1.16 8 8 0 1 1-6.556 3.412l-.663-.577a.58.58 0 0 1 .227-.997l2.52-.69a.58.58 0 0 1 .728.633l-.332 2.592a.58.58 0 0 1-.956.364l-.643-.56A6.8 6.8 0 0 0 1.16 8z"/>
+                        <path d="M6.641 11.671V8.843h1.57l1.498 2.828h1.314L9.377 8.665c.897-.3 1.427-1.106 1.427-2.1 0-1.37-.943-2.246-2.456-2.246H5.5v7.352zm0-3.75V5.277h1.57c.881 0 1.416.499 1.416 1.32 0 .84-.504 1.324-1.386 1.324z"/>
+                      </svg></dl> 
+                     </dt>
+                    </div>
+                  </div>
+              </center>
+          </div>
+      </div>
+      <div class="box2">
+          <div class="info-video" id="info-video" style="display: block;">
+              <br>
+              <div class="info-video" id="info-video" style="display: block;"></div>
+              <h1 style="margin-left:10%; ">Filtro</h1><br><br>
+              <h3>
+                  <center>Deslice la barra para ajustar la intensidad del filtro.<br>Duración Max. 30s</center>
+              </h3><br>
+              <div class="interval-container">
+                  <center>
+                      <input type="range" id="interval-range" class="interval-range" min="0" max="100" value="1">
+                  </center>
+              </div>
+          </div>
+          <div class="filtros-video" id="filtros-videos" style="display: block;">
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+              />
+              <center>
+                  <div class="block-filter">
+                      <div class="editor-panel">
+                          <div class="filter">
+                              <label class="title">Opciones de Filtros</label>
+                              <div class="options">
+                                  <button id="brightness" class="active">Brillo</button>
+                                  <button id="saturation">Saturarcion</button>
+                                  <button id="inversion">Inversion</button>
+                                  <button id="grayscale">Escala de Grises</button>
+                              </div>
+                              <div class="slider">
+                                  <div class="filter-info">
+                                      <p class="name">Brillo</p>
+                                      <p class="value">100%</p>
+                                  </div>
+                                  <input type="range" value="100" min="0" max="200">
+                              </div>
+                          </div>
+                          <div class="rotate">
+                              <label class="title">Rotate & Flip</label>
+                              <div class="options">
+                                  <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                                  <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                                  <button id="horizontal">Espejo vertical<i class='bx bx-reflect-vertical'></i></button>
+                                  <button id="vertical">Espejo horizontal<i class='bx bx-reflect-horizontal' ></i></button>
+                                  <button class="reset-filter">Restaurar Filtro</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </center>
+          </div>
+      </div>
+      <div class="box3"><br>
+          <div id="images-container"></div>
+      </div>
+    <div class="box4">
+       <!--      <br>
+          <form id="formulario" action="http://127.0.0.1:3000/photos/upload" method="POST" enctype="multipart/form-data">
+              <div class="upload-container">
+                  <label id="btn-add" for="selector_archivo" class="file-upload-label"><i class="bi bi-plus-circle"></i></label>
+                  <input type="file" class="file-upload-input" id="selector_archivo" name="photos" accept="image/, video/" required>
+              </div>
+          </form>--->
+      </div>
+      <div class="box5">
+          <div class="misproyectos">
+              <div class="barrita">
+                  <button id="expor" class="btn-expor">Exportar</button>
+                  <button id="desc" class="btn-cancel">Retroceder</button>
+                  <button id="cont" class="btn-continuar">Publicar</button>
+              </div>
+          </div>
+      </div>
+
+
+      </body>
